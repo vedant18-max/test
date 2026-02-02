@@ -1,83 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Vedant Khaire — Portfolio</title>
-</head>
-<body style="margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(135deg,#0f172a 0%,#021431 60%); color:#e6eef8; -webkit-font-smoothing:antialiased;">
-	<div style="max-width:1000px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border-radius:16px;box-shadow:0 10px 30px rgba(2,6,23,0.6);">
-		<header style="display:flex;gap:20px;align-items:center;">
-			<div style="width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#6ee7b7,#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021431;font-size:28px;box-shadow:0 6px 18px rgba(11,22,39,0.6);">VK</div>
-			<div>
-				<h1 style="margin:0;font-size:28px;letter-spacing:0.2px;">Vedant Khaire</h1>
-				<p style="margin:6px 0 0;color:#cfe9ff;opacity:0.9;font-size:15px;">3rd year student at Mumbai University • Aspiring Software Developer</p>
-			</div>
-			<div style="margin-left:auto;display:flex;gap:10px;align-items:center;">
-				<a href="#contact" style="text-decoration:none;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.06);color:#e6eef8;font-weight:600;border:1px solid rgba(255,255,255,0.04)">Contact</a>
-				<a href="#projects" style="text-decoration:none;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#16a34a,#06b6d4);color:#021431;font-weight:700;">Projects</a>
-			</div>
-		</header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Vedant Khaire — Software Student</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							page: '#070708',
+							panel: '#0f1113',
+							accent: '#9ca3ff',
+							muted: '#9aa4b2'
+						},
+						fontFamily: {
+							display: ['Playfair Display', 'serif'],
+							body: ['Inter', 'sans-serif']
+						}
+					}
+				}
+			}
+		</script>
+		<meta name="description" content="Vedant Khaire — portfolio" />
+	</head>
+	<body class="bg-page text-white font-body antialiased">
+		<div class="min-h-screen flex items-start justify-center py-12 px-6">
+			<div class="w-full max-w-3xl">
+				<div class="bg-panel/80 rounded-xl shadow-xl ring-1 ring-white/6 p-10">
+					<header class="flex items-start gap-6">
+						<div class="flex-none">
+							<div class="w-20 h-20 rounded-full bg-gradient-to-tr from-indigo-400 to-sky-400 flex items-center justify-center text-[#07102a] font-semibold text-2xl">VK</div>
+						</div>
+						<div class="flex-1">
+							<h1 class="text-4xl font-display leading-tight">Vedant Khaire</h1>
+							<p class="text-sm text-muted mt-2 tracking-wide">3rd year student at Mumbai University</p>
+							<p class="mt-5 text-gray-200">I build things from the ground up — focused on polished web interfaces and reliable systems. I enjoy turning ideas into well-engineered, maintainable code.</p>
 
-		<main style="margin-top:28px;display:grid;grid-template-columns:1fr 320px;gap:22px;">
-			<section style="padding:22px;border-radius:12px;background:rgba(0,0,0,0.15);">
-				<h2 style="margin:0 0 10px;font-size:20px;color:#dff2ff">About</h2>
-				<p style="margin:0 0 14px;color:#d0e9ff;line-height:1.6">Hello — I'm Vedant, a 3rd year student at Mumbai University focused on building clean, user-friendly web and software experiences. I enjoy solving problems with code, learning full-stack development, and contributing to open-source projects.</p>
+							<div class="mt-4 flex items-center gap-4 text-sm">
+								<!-- simple icon placeholders -->
+								<a href="#" class="text-muted hover:text-white">Github</a>
+								<span class="text-muted">•</span>
+								<a href="#" class="text-muted hover:text-white">LinkedIn</a>
+								<span class="text-muted">•</span>
+								<a href="mailto:vedant@example.com" class="font-medium text-white">vedant@example.com</a>
+							</div>
+						</div>
+						<div class="flex-none text-right">
+							<div class="text-sm text-muted">Location</div>
+							<div class="font-medium">Mumbai, India</div>
+						</div>
+					</header>
 
-				<h3 style="margin-top:18px;margin-bottom:8px;color:#cfe9ff">Skills</h3>
-				<div style="display:flex;flex-wrap:wrap;gap:8px;">
-					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">JavaScript</span>
-					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">Python</span>
-					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">React</span>
-					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">HTML & CSS</span>
-					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">Git</span>
+					<main class="mt-8">
+						<section>
+							<h2 class="text-xs text-muted uppercase tracking-wider">Experience</h2>
+							<div class="mt-5 space-y-6">
+								<div class="flex items-start justify-between">
+									<div>
+										<div class="font-semibold">Software Developer</div>
+										<div class="text-sm text-muted">Independent</div>
+										<p class="mt-2 text-gray-200 text-sm">Building web apps and small tools — focusing on frontend interfaces and reliable delivery.</p>
+									</div>
+									<div class="text-sm text-muted">2023 — Present</div>
+								</div>
+
+								<div class="flex items-start justify-between">
+									<div>
+										<div class="font-semibold">Frontend Intern</div>
+										<div class="text-sm text-muted">University Project</div>
+										<p class="mt-2 text-gray-200 text-sm">Contributed to responsive UI components and accessibility improvements.</p>
+									</div>
+									<div class="text-sm text-muted">2022</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="mt-8">
+							<h2 class="text-xs text-muted uppercase tracking-wider">Selected Work</h2>
+							<div class="mt-4 border-t border-white/6 pt-4 space-y-4">
+								<div class="flex items-start justify-between">
+									<div class="max-w-xl">
+										<a href="#" class="text-lg font-semibold hover:underline">Personal Portfolio</a>
+										<p class="text-sm text-gray-200 mt-1">A responsive portfolio showcasing projects and technical notes. Built with modern frontend tooling.</p>
+									</div>
+									<div class="text-sm text-muted">site</div>
+								</div>
+
+								<div class="flex items-start justify-between">
+									<div class="max-w-xl">
+										<a href="#" class="text-lg font-semibold hover:underline">Study Tracker</a>
+										<p class="text-sm text-gray-200 mt-1">A small productivity tool to schedule and track study sessions.</p>
+									</div>
+									<div class="text-sm text-muted">app</div>
+								</div>
+
+								<div class="flex items-start justify-between">
+									<div class="max-w-xl">
+										<a href="#" class="text-lg font-semibold hover:underline">Mini Chatbot</a>
+										<p class="text-sm text-gray-200 mt-1">Prototype chatbot for automating common FAQ responses.</p>
+									</div>
+									<div class="text-sm text-muted">prototype</div>
+								</div>
+							</div>
+						</section>
+					</main>
+
+					<footer id="contact" class="mt-8 pt-6 border-t border-white/6 flex items-center justify-between">
+						<div>
+							<div class="text-sm text-muted">Let's build something.</div>
+							<div class="text-sm"><a href="mailto:vedant@example.com" class="text-white font-medium">vedant@example.com</a></div>
+						</div>
+						<div class="text-sm text-muted">© Vedant Khaire • 3rd Year, Mumbai University</div>
+					</footer>
 				</div>
-
-				<h3 style="margin-top:18px;margin-bottom:8px;color:#cfe9ff">Summary</h3>
-				<p style="margin:0;color:#d0e9ff;line-height:1.6">I build small-to-medium web apps and prototypes that prioritize usability and maintainability. Currently exploring backend development and cloud fundamentals to round out my full-stack skills.</p>
-			</section>
-
-			<aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
-				<div style="margin-bottom:16px;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);">
-					<h3 style="margin:0 0 8px;color:#dff2ff">Contact</h3>
-					<p style="margin:0;color:#cfe9ff;font-size:14px">Email: <a href="mailto:vedant@example.com" style="color:#9fe7ff;text-decoration:none;">vedant@example.com</a></p>
-					<p style="margin:8px 0 0;color:#cfe9ff;font-size:14px">Location: Mumbai, India</p>
-				</div>
-
-				<div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);">
-					<h3 style="margin:0 0 8px;color:#dff2ff">Education</h3>
-					<p style="margin:0;color:#cfe9ff;font-size:14px">B.Sc. (continuing), Mumbai University — 3rd Year</p>
-				</div>
-			</aside>
-		</main>
-
-		<section id="projects" style="margin-top:22px;padding:20px;border-radius:12px;background:rgba(0,0,0,0.12);">
-			<h2 style="margin:0 0 14px;font-size:20px;color:#dff2ff">Selected Projects</h2>
-			<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
-				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
-					<h4 style="margin:0 0 8px;color:#cfe9ff">Portfolio Website</h4>
-					<p style="margin:0;color:#d0e9ff;font-size:14px">A personal site to showcase projects and resume, built with vanilla HTML/CSS and JavaScript.</p>
-				</article>
-				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
-					<h4 style="margin:0 0 8px;color:#cfe9ff">Study Tracker</h4>
-					<p style="margin:0;color:#d0e9ff;font-size:14px">A small productivity app to plan and track study sessions with timers and notes.</p>
-				</article>
-				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
-					<h4 style="margin:0 0 8px;color:#cfe9ff">Mini Chatbot</h4>
-					<p style="margin:0;color:#d0e9ff;font-size:14px">A rule-based chatbot prototype for FAQ automation.</p>
-				</article>
 			</div>
-		</section>
-
-		<footer id="contact" style="margin-top:22px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.015),transparent);display:flex;align-items:center;justify-content:space-between;">
-			<div>
-				<strong style="display:block;color:#dff2ff">Let's build something together</strong>
-				<span style="color:#cfe9ff">Email me at <a href="mailto:vedant@example.com" style="color:#9fe7ff;text-decoration:none;">vedant@example.com</a></span>
-			</div>
-			<div style="text-align:right">
-				<small style="color:#9fbcd6">© Vedant Khaire — 3rd Year, Mumbai University</small>
-			</div>
-		</footer>
-	</div>
-</body>
+		</div>
+	</body>
 </html>
