@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Vedant Khaire — Portfolio</title>
 </head>
-<body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatum rem architecto doloribus culpa omnis ipsa dolores, magni sed nisi voluptas, corrupti rerum accusantium iure expedita nulla odio maxime consequatur!</h1>
+<body style="margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(135deg,#0f172a 0%,#021431 60%); color:#e6eef8; -webkit-font-smoothing:antialiased;">
+	<div style="max-width:1000px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border-radius:16px;box-shadow:0 10px 30px rgba(2,6,23,0.6);">
+		<header style="display:flex;gap:20px;align-items:center;">
+			<div style="width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#6ee7b7,#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021431;font-size:28px;box-shadow:0 6px 18px rgba(11,22,39,0.6);">VK</div>
+			<div>
+				<h1 style="margin:0;font-size:28px;letter-spacing:0.2px;">Vedant Khaire</h1>
+				<p style="margin:6px 0 0;color:#cfe9ff;opacity:0.9;font-size:15px;">3rd year student at Mumbai University • Aspiring Software Developer</p>
+			</div>
+			<div style="margin-left:auto;display:flex;gap:10px;align-items:center;">
+				<a href="#contact" style="text-decoration:none;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.06);color:#e6eef8;font-weight:600;border:1px solid rgba(255,255,255,0.04)">Contact</a>
+				<a href="#projects" style="text-decoration:none;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#16a34a,#06b6d4);color:#021431;font-weight:700;">Projects</a>
+			</div>
+		</header>
+
+		<main style="margin-top:28px;display:grid;grid-template-columns:1fr 320px;gap:22px;">
+			<section style="padding:22px;border-radius:12px;background:rgba(0,0,0,0.15);">
+				<h2 style="margin:0 0 10px;font-size:20px;color:#dff2ff">About</h2>
+				<p style="margin:0 0 14px;color:#d0e9ff;line-height:1.6">Hello — I'm Vedant, a 3rd year student at Mumbai University focused on building clean, user-friendly web and software experiences. I enjoy solving problems with code, learning full-stack development, and contributing to open-source projects.</p>
+
+				<h3 style="margin-top:18px;margin-bottom:8px;color:#cfe9ff">Skills</h3>
+				<div style="display:flex;flex-wrap:wrap;gap:8px;">
+					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">JavaScript</span>
+					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">Python</span>
+					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">React</span>
+					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">HTML & CSS</span>
+					<span style="padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-size:13px">Git</span>
+				</div>
+
+				<h3 style="margin-top:18px;margin-bottom:8px;color:#cfe9ff">Summary</h3>
+				<p style="margin:0;color:#d0e9ff;line-height:1.6">I build small-to-medium web apps and prototypes that prioritize usability and maintainability. Currently exploring backend development and cloud fundamentals to round out my full-stack skills.</p>
+			</section>
+
+			<aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
+				<div style="margin-bottom:16px;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);">
+					<h3 style="margin:0 0 8px;color:#dff2ff">Contact</h3>
+					<p style="margin:0;color:#cfe9ff;font-size:14px">Email: <a href="mailto:vedant@example.com" style="color:#9fe7ff;text-decoration:none;">vedant@example.com</a></p>
+					<p style="margin:8px 0 0;color:#cfe9ff;font-size:14px">Location: Mumbai, India</p>
+				</div>
+
+				<div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);">
+					<h3 style="margin:0 0 8px;color:#dff2ff">Education</h3>
+					<p style="margin:0;color:#cfe9ff;font-size:14px">B.Sc. (continuing), Mumbai University — 3rd Year</p>
+				</div>
+			</aside>
+		</main>
+
+		<section id="projects" style="margin-top:22px;padding:20px;border-radius:12px;background:rgba(0,0,0,0.12);">
+			<h2 style="margin:0 0 14px;font-size:20px;color:#dff2ff">Selected Projects</h2>
+			<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
+					<h4 style="margin:0 0 8px;color:#cfe9ff">Portfolio Website</h4>
+					<p style="margin:0;color:#d0e9ff;font-size:14px">A personal site to showcase projects and resume, built with vanilla HTML/CSS and JavaScript.</p>
+				</article>
+				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
+					<h4 style="margin:0 0 8px;color:#cfe9ff">Study Tracker</h4>
+					<p style="margin:0;color:#d0e9ff;font-size:14px">A small productivity app to plan and track study sessions with timers and notes.</p>
+				</article>
+				<article style="padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);">
+					<h4 style="margin:0 0 8px;color:#cfe9ff">Mini Chatbot</h4>
+					<p style="margin:0;color:#d0e9ff;font-size:14px">A rule-based chatbot prototype for FAQ automation.</p>
+				</article>
+			</div>
+		</section>
+
+		<footer id="contact" style="margin-top:22px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.015),transparent);display:flex;align-items:center;justify-content:space-between;">
+			<div>
+				<strong style="display:block;color:#dff2ff">Let's build something together</strong>
+				<span style="color:#cfe9ff">Email me at <a href="mailto:vedant@example.com" style="color:#9fe7ff;text-decoration:none;">vedant@example.com</a></span>
+			</div>
+			<div style="text-align:right">
+				<small style="color:#9fbcd6">© Vedant Khaire — 3rd Year, Mumbai University</small>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
